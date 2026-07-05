@@ -1,28 +1,49 @@
-<html>
-    <head>
-        <title>
-            QR CODE GENERATER APP
-        </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>QR CODE GENERATER</h1>
-        <form id="qr-form">
-            <div class="content">
-                <label for="" class="margin">ID :- </label>
-                <input type="text" id="qr-id" class="qr-input" placeholder="Enter ID">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR POS System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
 
-            </div>
-            <div class="content">
-                <label for="" class="margin">PRICE :- </label>
-                <input type="text" id="qr-price" class="qr-input" placeholder="Enter Price">
-            </div>
-            <button type="submit" class="submit">GENERATE QR CODE</button>
+<div class="container">
+
+    <!-- LEFT PANEL (Form) -->
+    <div class="left-panel">
+        <h2>QR Generator</h2>
+
+        <form id="qr-form" class="form-card">
+
+            <label>Product ID</label>
+            <input type="text" id="qr-id" placeholder="Enter Product ID">
+
+            <label>Price</label>
+            <input type="text" id="qr-price" placeholder="Enter Price">
+
+            <button type="submit" class="btn primary">Generate QR</button>
+
+            <button type="button" id="download-btn" class="btn secondary">
+                Download QR
+            </button>
+
         </form>
-        <div id="qr-result">
-	    </div>
+    </div>
 
-        <script src="script.js"></script>
-    </body>
+    <!-- RIGHT PANEL (Preview) -->
+    <div class="right-panel">
+
+        <h2>QR Preview</h2>
+
+        <div id="qr-result" class="qr-box">
+            <p>No QR generated yet</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>

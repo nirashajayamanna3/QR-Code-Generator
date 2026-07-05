@@ -1,32 +1,83 @@
-.submit{
-    background-color: blue;
-    color: white;
-    padding: 10px 12px;
-	text-transform: uppercase;
-	border-radius: 5px;
-	
-}
-
 body {
-	font-family: Arial, sans-serif;
-	text-align: center;
-	margin-top: 50px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
 }
 
-.content{
-    margin-bottom: 15px;
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+    height: 100vh;
 }
 
-.qr-input{
+/* LEFT PANEL */
+.left-panel {
+    width: 35%;
+    background: #1e293b;
+    color: white;
+    padding: 30px;
+}
+
+.left-panel h2 {
+    margin-bottom: 20px;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    width: 65%;
+    padding: 30px;
+}
+
+/* FORM CARD */
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+input {
     padding: 10px;
-	width: 200px;  
+    border-radius: 6px;
+    border: none;
+    outline: none;
 }
 
-.margin {
-	margin-right: 18px;
+/* BUTTONS */
+.btn {
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-#qr-result img {
-	margin-top: 20px;
-	border: 1px solid #000;
+.primary {
+    background: #3b82f6;
+    color: white;
+}
+
+.secondary {
+    background: #10b981;
+    color: white;
+}
+
+/* QR BOX */
+.qr-box {
+    background: white;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.qr-box img {
+    max-width: 500px;
 }

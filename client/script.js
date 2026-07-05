@@ -5,6 +5,11 @@ document.getElementById('qr-form').addEventListener('submit', function (e) {
 
 	const id = document.getElementById('qr-id').value;
 	const price = document.getElementById('qr-price').value;
+
+     if (id === "" || price === "") {
+        alert("Please enter both ID and Price");
+        return;
+    }
 	const data = { id, price }
 
 	fetch('http://localhost:3000/api/generate-qr', {
