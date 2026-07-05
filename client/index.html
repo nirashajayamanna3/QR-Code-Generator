@@ -8,11 +8,17 @@
     <body>
         <h1>QR CODE GENERATER</h1>
         <form action="">
-            <label for="">ID :- </label>
-            <input type="text" name="id" value=" " placeholder="Enter ID"><br/><br/>
-            <label for="">PRICE :- </label>
-            <input type="text" name="price" value=" " placeholder="Enter Price"><br/><br/>
+            <div class="content">
+                <label for="" class="margin">ID :- </label>
+                <input type="text" name="id" value=" " class="qr-input" placeholder="Enter ID">
+            </div>
+            <div class="content">
+                <label for="" class="margin">PRICE :- </label>
+                <input type="text" name="price" value=" " class="qr-input" placeholder="Enter Price">
+            </div>
             <button type="submit" class="submit">GENERATE QR CODE</button>
         </form>
+        <div id="qr-result">
+	    </div>
     </body>
 </html>

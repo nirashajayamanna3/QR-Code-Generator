@@ -1,10 +1,32 @@
 .submit{
     background-color: blue;
     color: white;
+    padding: 10px 12px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	
 }
 
 body {
 	font-family: Arial, sans-serif;
 	text-align: center;
 	margin-top: 50px;
+}
+
+.content{
+    margin-bottom: 15px;
+}
+
+.qr-input{
+    padding: 10px;
+	width: 200px;  
+}
+
+.margin {
+	margin-right: 18px;
+}
+
+#qr-result img {
+	margin-top: 20px;
+	border: 1px solid #000;
 }
